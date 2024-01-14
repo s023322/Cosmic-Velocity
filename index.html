@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us" style="background:black;">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Cosmic Velocity</title>
+    <title>Cosmic Velocity</title>
+    <style>
+      * {
+        background-color: black;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+      }
+    </style>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=640 height=360 tabindex="-1" style="width: 640px; height: 360px; background: #000F26 padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block;"></canvas>
+    <canvas id="unity-canvas" width=640 height=360 tabindex="-1" style="width: 640px; height: 360px; background: #000F26"></canvas>
     <script src="Build/CV Build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
